@@ -1,6 +1,32 @@
 .page {
+  margin: 7rem 3rem;
   width: 100%;
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
+  &__container {
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.title {
+  font-family: 'Junegull', 'Gill Sans MT';
+  margin: 1rem;
+  font-size: 5rem;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+  text-shadow: -1px -1px 0 rgb(191, 162, 222), 3px -3px 0 rgb(191, 162, 222),
+    -1px 1px 0 rgb(191, 162, 222), 1px 1px 0 rgb(191, 162, 222);
+}
+
+.video {
+  position: absolute;
+  left: 0;
+  top: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
 }

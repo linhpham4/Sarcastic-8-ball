@@ -3,12 +3,49 @@
   width: 45%;
   aspect-ratio: 1/1;
   border-radius: 50%;
-  border: 3px solid black;
+  border: 2px solid black;
   box-shadow: 3px 3px 60px rgb(134, 121, 163) inset;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  overflow: hidden;
+  object-fit: cover;
+  font-family: "Playwrite", "Gill Sans MT";
+  &--fade {
+    animation: fadeIn 2s;
+    color: rgb(46, 56, 104);
+  }
+
   &__8 {
     font-size: 6rem;
+  }
+
+  &__string {
+    font-size: 1.5rem;
+    text-align: center;
+    color: rgb(46, 56, 104);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    background-color: white;
+  }
+  25% {
+    background-color: rgb(46, 56, 104);
+    box-shadow: 3px 3px 60px rgb(27, 18, 62) inset;
+  }
+  75% {
+    background-color: rgb(46, 56, 104);
+    box-shadow: 3px 3px 60px rgb(27, 18, 62) inset;
+  }
+  100% {
+    background-color: white;
   }
 }
