@@ -2,9 +2,11 @@
   margin-top: 1rem;
   background-color: rgb(71, 75, 117);
   width: 70%;
+  max-width: 666px;
   aspect-ratio: 1/1;
   border-radius: 50%;
-  box-shadow: inset -30px -30px 40px rgb(43, 27, 60);
+  box-shadow: inset -30px -30px 40px rgb(43, 27, 60), 
+  inset -30px -30px 40px rgb(43, 27, 60);
   display: flex;
   justify-content: center;
   align-items: center;

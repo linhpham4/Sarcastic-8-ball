@@ -7,6 +7,7 @@ import "./HomePage.scss";
 
 import Ball from "../component/Ball/Ball";
 import Input from "../component/Input/Input";
+import video from "../assets/stars1.mp4";
 
 const HomePage = () => {
   const { id } = useParams();
@@ -34,6 +35,9 @@ const HomePage = () => {
         <Ball answer={answer} />
         <Input handleSubmit={handleSubmit} />
       </div>
+      <video className="video" autoPlay muted loop>
+        <source type="video/mp4" src={video} />
+      </video>
     </>
   );
 };
