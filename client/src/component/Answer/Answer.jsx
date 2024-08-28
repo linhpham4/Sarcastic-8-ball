@@ -1,6 +1,6 @@
 import "./Answer.scss";
 
-const Ball = ({ answer }) => {
+const Answer = ({ answer }) => {
   return (
     <div className="answer">
       <h2 className="answer__8">{answer}</h2>
@@ -8,4 +8,4 @@ const Ball = ({ answer }) => {
   );
 };
 
-export default Ball;
+export default Answer;
