@@ -1,8 +1,9 @@
 import './Ball.scss'
+import Answer from '../Answer/Answer'
 
 const Ball = () => {
   return (
-    <div className='Ball'>
+    <div className='ball'>
       <Answer />
     </div>
   )
