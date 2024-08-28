@@ -4,7 +4,7 @@
   align-items: center;
   width: 80%;
   &__textarea {
-    font-family: 'Junegull', 'Gill Sans MT';
+    font-family: "Junegull", "Gill Sans MT";
     width: 100%;
     border: 1px solid rgb(53, 60, 87);
     padding: 1rem;
@@ -14,12 +14,12 @@
     font-size: 1.5rem;
     box-shadow: 0px 0px 30px rgb(191, 162, 222);
     display: flex;
-    &::placeholder{
+    &::placeholder {
       color: rgb(176, 160, 193);
     }
   }
   &__button {
-    font-family: 'Junegull', 'Gill Sans MT';
+    font-family: "Junegull", "Gill Sans MT";
     padding: 1rem;
     margin: 1rem;
     width: 50%;
@@ -27,11 +27,12 @@
     color: white;
     border-radius: 50px;
     font-size: 1.5rem;
-    box-shadow: 0px 0px 30px rgb(191, 162, 222);
+    box-shadow: inset -5px -5px 10px rgb(87, 58, 121),
+      inset -20px -20px 40px rgb(49, 31, 69), 0px 0px 60px rgb(191, 162, 222);
     &:hover {
       cursor: pointer;
-      background-color: rgb(129, 110, 175);
-      color: white;
+      background-color: rgb(151, 61, 149);
+      color: rgb(255, 184, 254);
       transition: 0.2s;
     }
   }

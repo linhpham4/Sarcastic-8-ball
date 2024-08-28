@@ -13,7 +13,7 @@ const HomePage = () => {
   const { id } = useParams();
 
   const [answer, setAnswer] = useState(8);
-  const [isActive, setActive] = useState(null)
+  const [isActive, setActive] = useState(null);
 
   const getAnswers = async () => {
     const response = await axios.get(`http://localhost:8080/answers/`);
@@ -26,27 +26,27 @@ const HomePage = () => {
     const answerArr = await getAnswers();
     const foundAnswerObject = answerArr.find((answer) => answer.id == randomId);
     const foundAnswer = foundAnswerObject.answer;
-    setTimeout(()=> {
+    setTimeout(() => {
       setAnswer(foundAnswer);
-    }, 1200)
-    
-    event.target.question.value = ""
+    }, 1200);
+
+    event.target.question.value = "";
   };
 
   const toggleClass = () => {
     setActive(!isActive);
-    setTimeout(() => 
-      {setActive(isActive)
-      },2000)
-  }
+    setTimeout(() => {
+      setActive(isActive);
+    }, 2000);
+  };
 
   return (
     <>
       <div className="page">
-        <Ball answer={answer} isActive={isActive}/>
+        <Ball answer={answer} isActive={isActive} />
         <div className="page__container">
-        <h1 className="title">Sarcastic 8-Ball</h1>
-        <Input handleSubmit={handleSubmit} toggleClass={toggleClass} />
+          <h1 className="title">Sarcastic <br/> 8-Ball</h1>
+          <Input handleSubmit={handleSubmit} toggleClass={toggleClass} />
         </div>
       </div>
       <video className="video" autoPlay muted loop>

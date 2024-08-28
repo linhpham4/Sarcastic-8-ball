@@ -9,16 +9,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+
   }
 }
 
 .title {
   font-family: 'Junegull', 'Gill Sans MT';
   margin: 1rem;
+  text-align: center;
   font-size: 5rem;
   font-weight: 600;
-  color: rgb(0, 0, 0);
-  text-shadow: -1px -1px 0 rgb(191, 162, 222), 3px -3px 0 rgb(191, 162, 222),
+  color: rgb(0, 32, 73);
+  text-shadow: -1px -1px 0 rgb(191, 162, 222), 4px -4px 0 rgb(191, 162, 222),
     -1px 1px 0 rgb(191, 162, 222), 1px 1px 0 rgb(191, 162, 222);
 }
 
