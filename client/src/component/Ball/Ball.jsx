@@ -1,12 +1,12 @@
-import './Ball.scss'
-import Answer from '../Answer/Answer'
+import "./Ball.scss";
+import Answer from "../Answer/Answer";
 
-const Ball = () => {
+const Ball = ({ answer }) => {
   return (
-    <div className='ball'>
-      <Answer />
+    <div className="ball">
+      <Answer answer={answer} />
     </div>
-  )
-}
+  );
+};
 
-export default Ball
+export default Ball;

@@ -1,15 +1,14 @@
 .answer {
-    background-color: white;
-    width: 45%;
-    aspect-ratio: 1/1;
-    border-radius: 50%;
-    border: 3px solid black;
-    box-shadow: 
-        3px 3px 60px rgb(134, 121, 163) inset;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    &__8 {
-        font-size: 6rem;
-    }
+  background-color: white;
+  width: 45%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  border: 3px solid black;
+  box-shadow: 3px 3px 60px rgb(134, 121, 163) inset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__8 {
+    font-size: 6rem;
+  }
 }

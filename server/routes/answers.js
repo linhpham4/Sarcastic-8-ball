@@ -1,10 +1,24 @@
-import express from 'express'
+import express from "express";
+import fs from "fs";
 
-const answers = express.Router()
+const answers = express.Router();
 
-answers.get('/', (request, response) => {
-    response.send('Hey this is working')
-})
+const readData = () => {
+  const answersData = fs.readFileSync("./data/data.json");
+  const parsedData = JSON.parse(answersData);
+  return parsedData;
+};
 
-export default answers
+answers.get("/", (_request, response) => {
+  const read = readData();
+  response.json(read);
+});
 
+answers.get("/:id", (request, response) => {
+  const id = request.params.id;
+  const read = readData();
+  const foundAnswer = read.find((answer) => answer.id === Number(id));
+  response.json(foundAnswer);
+});
+
+export default answers;

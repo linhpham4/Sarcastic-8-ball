@@ -1,9 +1,5 @@
 import "./App.css";
-
 import { Routes, Route, BrowserRouter } from "react-router-dom";
-
-import Ball from "./component/Ball/Ball";
-import Input from "./component/Input/Input";
 import HomePage from "./pages/HomePage";
 
 function App() {
