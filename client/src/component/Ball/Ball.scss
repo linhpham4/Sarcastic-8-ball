@@ -1,13 +1,15 @@
 .ball {
-  background-color: rgb(58, 64, 124);
+  background-color: rgb(86, 153, 225);
   width: 70%;
   max-width: 666px;
   aspect-ratio: 1/1;
   border-radius: 50%;
-  box-shadow: inset -10px -10px 40px rgb(87, 58, 121),
-  inset -90px -90px 40px rgb(49, 31, 69),
-  inset 10px 10px 40px rgb(49, 31, 69),
-    0px 0px 60px rgb(191, 162, 222);
+  box-shadow: inset -20px -20px 40px rgb(106, 58, 121),
+    inset 1px 1px 40px rgb(87, 58, 121),
+    inset -150px -150px 60px rgb(38, 22, 56),
+    inset -330px -330px 190px rgb(63, 55, 124),
+    inset 30px 30px 60px rgb(49, 31, 69), 
+    0px 0px 50px rgb(191, 162, 222);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,29 +23,26 @@
   0% {
     transform: translate(0);
   }
-  20% {
-    transform: translate(-1rem, -1rem);
-  }
   30% {
-    transform: translate(1rem, 1rem);
+    transform: translate(-3rem, -3rem);
   }
   40% {
-    transform: translate(-1rem, -1rem);
+    transform: translate(3rem, 3rem);
   }
   50% {
-    transform: translate(1rem, 1rem);
+    transform: translate(-2rem, -2rem);
   }
   60% {
-    transform: translate(-1rem, -1rem);
+    transform: translate(2rem, 2rem);
   }
   70% {
-    transform: translate(1rem, 1rem);
+    transform: translate(-2rem, -2rem);
   }
   80% {
-    transform: translate(-1rem, -1rem);
+    transform: translate(1rem, 1rem);
   }
   90% {
-    transform: translate(1rem, 1rem);
+    transform: translate(-0.5rem, -0.5rem);
   }
   100% {
     transform: translate(0);
