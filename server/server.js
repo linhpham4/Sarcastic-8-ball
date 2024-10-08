@@ -3,6 +3,8 @@ import answers from "./routes/answers.js"
 const app = express()
 
 import cors from 'cors'
+import "dotenv/config";
+const PORT = process.env.PORT || 8081
 
 //Allow for all domains to access page
 app.use(cors())
@@ -14,6 +16,6 @@ app.use(express.json())
 app.use('/answers', answers)
 
 //Listen
-app.listen(8080, () => {
-    console.log("listening")
+app.listen(PORT, () => {
+    console.log(`Listening on port ${PORT}`)
 })
