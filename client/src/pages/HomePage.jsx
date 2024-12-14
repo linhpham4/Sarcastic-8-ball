@@ -15,8 +15,10 @@ const HomePage = () => {
   const [answer, setAnswer] = useState(8);
   const [isActive, setActive] = useState(null);
 
+  const URL = import.meta.env.VITE_APP_BASE_URL;
+
   const getAnswers = async () => {
-    const response = await axios.get(`http://localhost:8080/answers/`);
+    const response = await axios.get(`${URL}/answers/`);
     return response.data;
   };
 
